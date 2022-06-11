@@ -17,4 +17,6 @@ jobs:
         uses: cloudflare/wrangler-action@1.2.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          email: ${{ secrets.CF_EMAIL }}
+        env:
+          USER: root
